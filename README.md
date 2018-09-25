@@ -15,10 +15,10 @@ public class ListasEjemplos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        desplegarMenu();
+        mostrar_desplegar_Menu();
     }
 
-    public static void desplegarMenu() {
+    public static void mostrar_desplegar_Menu() {
         int opcion = 0;
         do {
             System.out.println("");
