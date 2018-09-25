@@ -31,8 +31,9 @@ public class ListasEjemplos {
             System.out.println("5. Eliminar elemento de la lista.");
             System.out.println("6. Preguntar si la lista está vacía.");
             System.out.println("7. Buscar elemento en la lista.");
-            System.out.println("8. Borrar todos los elementos de la lista.");
-            System.out.println("9. Salir");
+            System.out.println("8. Actualizar elemento de la lista");
+            System.out.println("9. Borrar todos los elementos de la lista.");
+            System.out.println("10. Salir");
             System.out.println("Seleccione una opción: ");
 
             opcion = sc.nextInt();
@@ -78,15 +79,22 @@ public class ListasEjemplos {
                         System.out.println(buscarElemento(elementoBuscar, ejemploListaString));
                         break;
                     case 8:
+                        System.out.println("Escriba indice: ");
+                        int indice = sc.nextInt();
+                        System.out.println("Escriba el elemento a buscar: ");
+                        sc.nextLine();
+                        String elementoActualizado = sc.nextLine();
+                        actualizarElementoLista(indice, elementoActualizado, ejemploListaString);
+                    case 9:
                         limpiarLista(ejemploListaString);
                         break;
-                    case 9:
+                    case 10:
                         System.out.println("Gracias por utilizar nuestro sistema.");
                         System.exit(0);
                         break;
                 }
             }
-        } while (opcion != 9);
+        } while (opcion != 10);
     }
 
     public static void precargarLista(List lista) {
@@ -142,6 +150,10 @@ public class ListasEjemplos {
             mensaje = elemento + " NO está en la lista.";
         }
         return mensaje;
+    }
+
+    public static void actualizarElementoLista(int indice, String elemento, List lista) {
+
     }
 
     public static void limpiarLista(List lista) {
