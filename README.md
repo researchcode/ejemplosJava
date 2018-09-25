@@ -24,6 +24,7 @@ public class ListasEjemplos {
             System.out.println("");
             System.out.println("****************************");
             System.out.println("MANEJO DE LISTAS EN JAVA ");
+            System.out.println("Ejemplo con una lista de cadena de texto (String)");
             System.out.println("1. Agregar valores iniciales a la lista.");
             System.out.println("2. Consultar tamaño de la lista.");
             System.out.println("3. Mostrar lista.");
@@ -154,7 +155,7 @@ public class ListasEjemplos {
     }
 
     public static void actualizarElementoLista(int indice, String elemento, List lista) {
-
+        lista.set(indice, elemento);
     }
 
     public static void limpiarLista(List lista) {
