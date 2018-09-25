@@ -24,7 +24,7 @@ public class ListasEjemplos {
             System.out.println("");
             System.out.println("****************************");
             System.out.println("MANEJO DE LISTAS EN JAVA ");
-            System.out.println("1. Pre-cargar lista.");
+            System.out.println("1. Agregar valores iniciales a la lista.");
             System.out.println("2. Consultar tamaño de la lista.");
             System.out.println("3. Mostrar lista.");
             System.out.println("4. Mostrar elementos de la lista por separado.");
@@ -47,7 +47,7 @@ public class ListasEjemplos {
                         System.exit(0);
                         break;
                     default:
-                        System.out.println("Debe pre-cargar la lista primero antes de utilizar las demás opciones.");
+                        System.out.println("Debe agregar valores iniciales a la lista primero antes de utilizar las demás opciones.");
                         break;
                 }
             } else {
@@ -81,10 +81,11 @@ public class ListasEjemplos {
                     case 8:
                         System.out.println("Escriba indice: ");
                         int indice = sc.nextInt();
-                        System.out.println("Escriba el elemento a buscar: ");
+                        System.out.println("Escriba el elemento a actualizar: ");
                         sc.nextLine();
                         String elementoActualizado = sc.nextLine();
                         actualizarElementoLista(indice, elementoActualizado, ejemploListaString);
+                        break;
                     case 9:
                         limpiarLista(ejemploListaString);
                         break;
